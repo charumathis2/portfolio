@@ -1,4 +1,4 @@
-/* Reset and base styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,19 +13,17 @@ body {
   min-height: 100vh;
 }
 
-/* Container */
 .container {
   max-width: 1000px;
   margin: 50px auto;
   padding: 30px;
-  background: #ffffffee; /* slightly transparent white */
+  background: #ffffffee; 
   border-radius: 16px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   display: grid;
   gap: 40px;
 }
 
-/* Header */
 header {
   text-align: center;
   border-bottom: 2px solid #dce3ea;
@@ -58,7 +56,6 @@ header p {
   color: #0077b5;
 }
 
-/* Section Styling */
 .section {
   display: grid;
   gap: 20px;
@@ -78,7 +75,6 @@ header p {
   padding-bottom: 8px;
 }
 
-/* Skills Grid */
 .skills {
   list-style: none;
   display: grid;
@@ -98,7 +94,6 @@ header p {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
 }
 
-/* Projects Cards */
 .projects {
   list-style: none;
   display: grid;
