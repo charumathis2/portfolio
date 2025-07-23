@@ -1,0 +1,126 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffffee; /* slightly transparent white */
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  display: grid;
+  gap: 40px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  border-bottom: 2px solid #dce3ea;
+  padding-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #2c3e50;
+}
+
+header p {
+  font-size: 1rem;
+  color: #555;
+  margin: 8px 0;
+}
+
+.socials {
+  margin-top: 10px;
+}
+
+.socials a {
+  font-size: 1.6rem;
+  color: #555;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #0077b5;
+}
+
+/* Section Styling */
+.section {
+  display: grid;
+  gap: 20px;
+  background: #f9fbfd;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  color: #2d3a4b;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #dce3ea;
+  padding-bottom: 8px;
+}
+
+/* Skills Grid */
+.skills {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.skills li {
+  background: #e3f2fd;
+  color: #2c3e50;
+  padding: 14px 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #c3ddee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+/* Projects Cards */
+.projects {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.projects li {
+  background: #f1f8e9;
+  color: #2c3e50;
+  padding: 18px 22px;
+  border-left: 6px solid #aed581;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.projects li:hover {
+  transform: translateY(-4px);
+  background: #e8f5e9;
+  border-left-color: #689f38;
+}
